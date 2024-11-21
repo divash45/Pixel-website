@@ -1,0 +1,91 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styling */
+  body {
+    font-family: 'Playwrite GB S', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: darkgray;
+  }
+  
+  /* Login Container Styling */
+  .login-container {
+    background-color: #333;
+    width: 300px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  .login-container h2 {
+    color: white;
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  
+  /* Input Fields Styling */
+  .login-container label {
+    display: block;
+    margin: 10px 0 5px;
+    color: white;
+  }
+  
+  .login-container input[type="text"],
+  .login-container input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    outline: none;
+  }
+  
+  .login-container input[type="text"]:focus,
+  .login-container input[type="password"]:focus {
+    border: 2px solid cyan;
+  }
+  
+  /* Button Styling */
+  .login-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: cyan;
+    border: none;
+    border-radius: 5px;
+    color: #333;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .login-container button:hover {
+    background-color: #fff;
+    color: #333;
+    font-style: italic;
+  }
+  
+  /* Signup Link */
+  .login-container .signup-link {
+    color: white;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  
+  .login-container .signup-link a {
+    color: cyan;
+    text-decoration: none;
+  }
+  
+  .login-container .signup-link a:hover {
+    text-decoration: underline;
+  }
+  

@@ -1,0 +1,140 @@
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap"
+      rel="stylesheet"
+    />
+* {
+    margin: 0px;
+    padding: 0px;
+  }
+  body{
+    background-color: darkgray;
+  }
+  header {
+    background-color: #333;
+    
+    height: 10vh;
+  }
+   nav ul li{
+    list-style: none;
+    padding: 5px;
+    text-align: center;
+    display: inline-block;
+    padding: 20px;
+    font-family: "Playwrite GB S", cursive;
+  }
+  nav ul li a{
+    color: white;
+    text-decoration: none;
+  }
+  nav ul li a:hover{    /*hover is used to change the colour of the text when mouse is hovered in the text*/
+    color: cyan;
+    font-style: italic;
+  }
+  nav ul{
+    display: flex;            /*used to make a block */
+    justify-content: center; /*used to shift the content to the center*/
+  }
+  nav{
+    display: flex;
+    width: 1000px;
+    align-items: center;
+  }
+  .search input{
+    width: 350px;
+    height: 20px;
+    border: 2px solid black;
+    margin: 5px;
+    padding: 0px 10px 1px ;
+  }
+  .btn{
+    background-color: #333;
+    margin: 2px;
+    padding: 2px 10px;
+    border: 2px solid black;
+    cursor: pointer;  /*search ke upar le jaunga tho hath ban ke aayega*/
+    border-radius: 5px;
+  }
+  .btn:hover{
+    color: white;
+    font-style: italic;
+    font-family: "Playwrite GB S", cursive;
+  }
+  section h4{
+    font-style: bold;
+    font-family: "Playwrite GB S", cursive;
+  }
+  section .cards{
+    position: relative;
+    width: 100vw;
+    height: 30vh;
+    border: 2px solid black;
+    margin-top: 10px;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+  }
+  section .cards .card{
+    position: relative;
+    min-width: 130px;
+    height: 300px;
+    border: 1px solid yellow;
+    border-radius: 8px;
+    margin-right: 10px;
+    background-color: aqua;
+    transition: .3s linear;
+  }
+  .container{
+    padding: .5rem;
+  }
+  .anime{
+    position: relative;
+    max-width: 80vw;
+    margin: 0 auto;
+  }
+  .slider{
+    display: flex;
+    aspect-ratio: 16/9;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0,0%,0%,0.25);
+    animation: slider 3s ease-in-out infinite alternate;
+  }
+  .slider img{
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+  }
+  .container .slider{
+    
+  }
+  .slider-nav{
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+  }
+  .slider-nav a{
+    width: 1vw;
+    height: 1vh;
+    border-radius: 50%;
+    background-color: #f4eded;
+    opacity: 0.75;            /*buttons ko kitna dhundhla dikhana haii uske liye */
+    transition: opacity ease 250ms;
+  }
+  .slider-nav a:hover{
+    opacity: 1;              /*mouse laane par opacity 100% ho jayegi*/
+    font-weight: bolder;
+  }
+  .random {
+    display: inline;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
